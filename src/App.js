@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Team 3 Members: Tyler Quinn, Kyle Bye
+          Team 3 Members: Tyler Quinn, Kyle Bye, Antonio Pantoja
         </p>
       </header>
     </div>
