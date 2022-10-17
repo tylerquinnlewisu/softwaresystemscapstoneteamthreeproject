@@ -1,4 +1,5 @@
 import './App.css';
+import Donate from './donate';
 
 function App() {
   return (
