@@ -1,4 +1,5 @@
 import './App.css';
+import ImageSlider from './ImageSlider';
 
 const dono = `<iframe
 id="JotFormIFrame-222896978943177"
@@ -23,7 +24,10 @@ background: transparent !important;
 `; 
 
 function App() {
-  return (
+  
+  //comment out div#IMAGESLIDER to get the page functioning as it was before
+  return(
+
     <div className="App">
       <header className="App-header">
       <h1>
@@ -32,14 +36,19 @@ function App() {
         <p>
           Team 3 Members: Tyler Quinn, Kyle Bye, Antonio Pantoja, Matthew Beaulieu
         </p>
+        <div id='IMAGESLIDER'>
+          <ImageSlider />
+        </div>
       </header>
       <body>
         <div dangerouslySetInnerHTML={{__html:dono}}>
         </div>
-
+        
       </body>
     </div>
-  );
+    
+    );
+  
 }
 
 export default App;
