@@ -10,6 +10,8 @@ import App from './App';
 import About from './About'
 import Donate from './Donate'
 import Slideshow from './Slideshow'
+import Register from './Register';
+import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 
 /*const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +29,8 @@ ReactDOM.render(
       <Route path="/about" element={<About/>}/>
       <Route path ="/donate" element={<Donate/>}/>
       <Route path ="/slideshow" element={<Slideshow/>}/>
+      <Route path ="/login" element={<Login/>}/>
+      <Route path ="/register" element={<Register/>}/>
     </Routes>
   </BrowserRouter>, 
   document.getElementById('root')
