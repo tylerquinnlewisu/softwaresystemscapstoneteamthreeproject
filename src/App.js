@@ -1,54 +1,47 @@
-import './App.css';
-import ImageSlider from './ImageSlider';
+import React, { Component } from 'react';
+//import { Link } from "react-router-dom"; // Might need this, I'm not sure yet ~ Kyle
+import './Menu.css';
 
-const dono = `<iframe
-id="JotFormIFrame-222896978943177"
-title="Online Donation Form"
-onload="window.parent.scrollTo(0,0)"
-allowtransparency="true"
-allowfullscreen="true"
-allow="geolocation; microphone; camera"
-src="https://form.jotform.com/222896978943177"
-frameborder="0"
-style="
-position: relative;
-right: 190px;
-bottom: 195px;
-min-width: 245%;
-height:1625px;
-border:none;"
-scrolling="no"
-background: transparent !important;
->
-</iframe>
-`; 
-
-function App() {
-  
-  //comment out div#IMAGESLIDER to get the page functioning as it was before
-  return(
-
-    <div className="App">
-      <header className="App-header">
-      <h1>
-        Software Systems Capstone
-      </h1>
-        <p>
-          Team 3 Members: Tyler Quinn, Kyle Bye, Antonio Pantoja, Matthew Beaulieu
-        </p>
-        <div id='IMAGESLIDER'>
-          <ImageSlider />
-        </div>
-      </header>
-      <body>
-        <div dangerouslySetInnerHTML={{__html:dono}}>
-        </div>
-        
-      </body>
-    </div>
-    
+//
+//  Current Layout at the moment:
+//    Our website link: https://mango-ground-0c9924810.1.azurestaticapps.net/
+// 
+//    Index/Landing Page:
+//      --> You're looking at it right now :), App.css (rewritten)
+//      NOTE: The old css file was renamed to AppOld.css, in case anyone
+//            wants to restore some of the old style. Also, the old code of
+//            the dono and IMAGESLIDER stuff is in AppOld.js
+//    Donation Page:
+//      --> Donate.js, Donate.css
+//      link: https://mango-ground-0c9924810.1.azurestaticapps.net/donate
+//    Slideshow
+//      --> Slideshow.js
+//      link: https://mango-ground-0c9924810.1.azurestaticapps.net/slideshow
+//      NOTE: I kept SliderData and ImageSlider the same at the time of this commit.
+//    About
+//      --> About.js
+//      link: https://mango-ground-0c9924810.1.azurestaticapps.net/about
+//      NOTE: I moved our names there. 
+//
+//    ~ Kyle
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header>
+        </header>
+        <body>   
+          <div class="menuSection">
+            <ul class="menu">
+              <li class="link"><a class="link_a" href="/">Home</a></li>
+              <li class="link"><a class="link_a" href="/donate">Donate</a></li>
+              <li class="link"><a class="link_a" href="/slideshow">Slideshow</a></li>
+              <li class="link"><a class="link_a"  href="/about">About</a></li>
+            </ul>
+          </div>
+        </body>
+      </div>
     );
-  
+  }
 }
 
-export default App;

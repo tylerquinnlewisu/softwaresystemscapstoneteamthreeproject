@@ -1,0 +1,31 @@
+.menu {
+    /* margin-top: 2vh; */
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menuSection {
+    width: 100%;
+    height: 8vh;
+    display:flex;
+    justify-content:center;
+    background-color: rgb(34, 32, 32);
+}
+
+
+.link {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.link_a {
+
+    float: center;
+    text-decoration: none;
+    color: white;
+}
