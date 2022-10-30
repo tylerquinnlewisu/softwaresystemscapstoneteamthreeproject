@@ -1,0 +1,27 @@
+#sliderContainer {
+    display: flex;
+    width: 60%;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border:  5px antiquewhite;
+    border-style: solid;
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    object-fit:fit;
+}
+
+#sliderControls {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#sliderControls > div {
+    margin: 5vw;
+}
