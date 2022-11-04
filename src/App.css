@@ -1,1 +1,66 @@
 /*WIP*/
+.app {
+    background-color: gray !important;
+}
+
+body {
+    background-color: rgb(16, 16, 16) !important;
+}
+
+#missionContainer {
+    position: relative;
+    width: auto;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right:5vw;
+    margin-top: 3vh;
+    margin-bottom: 0;
+}
+
+#missionLeftSide {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    margin-top:3vh;
+}
+
+#missionRightSide {
+    width: 50vw;
+    height: 40vh;
+}
+
+#fairmontImg {
+    width: 100%;
+    height: 100%;
+}
+
+#missionStatementHeading {
+    font-size: x-large;
+    color: white;
+}
+
+#missionStatementText {
+    font-size: x-large;
+    color: white;
+}
+
+#fairmontImg2 {
+    width: 88.65vw;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#fairmontLogo {
+    position: relative;
+    width: auto;
+    height: 8vh;
+    margin-top: 1vh;
+}
+
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Donate.css'
-import './Menu.css'
+import Menu from './Menu';
 
 export default function Donate () {
     return (
@@ -9,14 +9,7 @@ export default function Donate () {
         </header>
 
         <body>
-            <div class="menuSection">
-                <ul class="menu">
-                    <li class="link"><a class="link_a" href="/">Home</a></li>
-                    <li class="link"><a class="link_a" href="/donate">Donate</a></li>
-                    <li class="link"><a class="link_a" href="/slideshow">Slideshow</a></li>
-                    <li class="link"><a class="link_a"  href="/about">About</a></li>
-                </ul>
-            </div>
+            <Menu/>
             <br/>
             <div>
                 <iframe
