@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
   BrowserRouter,
-  HashRouter,
-  Switch,
   Routes,
   Route
 } from 'react-router-dom';
@@ -17,16 +15,16 @@ import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Router>
-    <Switch>
+  <BrowserRouter>
+    <Routes>
       <Route exact path="/" element={<App/>}/>
       <Route exact path="/about" element={<About/>}/>
       <Route exact path ="/donate" element={<Donate/>}/>
       <Route exact path ="/slideshow" element={<Slideshow/>}/>
       <Route exact path ="/login" element={<Login/>}/>
       <Route exact path ="/register" element={<Register/>}/>
-    </Switch>
-  </Router>, 
+    </Routes>
+  </BrowserRouter>, 
   document.getElementById('root')
 );
 
