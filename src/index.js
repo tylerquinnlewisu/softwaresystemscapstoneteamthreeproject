@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
   BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from 'react-router-dom';
@@ -23,7 +24,7 @@ root.render(
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App/>}/>
       <Route path="/about" element={<About/>}/>
@@ -32,7 +33,7 @@ ReactDOM.render(
       <Route path ="/login" element={<Login/>}/>
       <Route path ="/register" element={<Register/>}/>
     </Routes>
-  </BrowserRouter>, 
+  </HashRouter>, 
   document.getElementById('root')
 );
 
