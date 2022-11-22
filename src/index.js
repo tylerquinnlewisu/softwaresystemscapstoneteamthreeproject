@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { 
   BrowserRouter,
   HashRouter,
+  Switch,
   Routes,
   Route
 } from 'react-router-dom';
@@ -15,25 +16,17 @@ import Register from './Register';
 import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 
-/*const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);*/
-
-//ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
-  <HashRouter>
-    <Routes>
-      <Route path="/" element={<App/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path ="/donate" element={<Donate/>}/>
-      <Route path ="/slideshow" element={<Slideshow/>}/>
-      <Route path ="/login" element={<Login/>}/>
-      <Route path ="/register" element={<Register/>}/>
-    </Routes>
-  </HashRouter>, 
+  <Router>
+    <Switch>
+      <Route exact path="/" element={<App/>}/>
+      <Route exact path="/about" element={<About/>}/>
+      <Route exact path ="/donate" element={<Donate/>}/>
+      <Route exact path ="/slideshow" element={<Slideshow/>}/>
+      <Route exact path ="/login" element={<Login/>}/>
+      <Route exact path ="/register" element={<Register/>}/>
+    </Switch>
+  </Router>, 
   document.getElementById('root')
 );
 
