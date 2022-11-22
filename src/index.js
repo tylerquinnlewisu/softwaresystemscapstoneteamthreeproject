@@ -15,7 +15,7 @@ import Login from './Login';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route exact path="/" element={<App/>}/>
       <Route exact path="/about" element={<About/>}/>
@@ -24,7 +24,7 @@ ReactDOM.render(
       <Route exact path ="/login" element={<Login/>}/>
       <Route exact path ="/register" element={<Register/>}/>
     </Routes>
-  </BrowserRouter>, 
+  </HashRouter>, 
   document.getElementById('root')
 );
 
