@@ -31,9 +31,3 @@ const ImageSlider = () => {
 };
 
 export default ImageSlider;
-
-/* {SliderData.map((slide, index) => {
-            return (
-                <img src={slide.image} alt='alternate' id="image" />
-                )
-            })} */

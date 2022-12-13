@@ -1,3 +1,4 @@
+// const app = express;
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
@@ -12,6 +13,7 @@ import Donate from './Donate'
 import Slideshow from './Slideshow'
 import Register from './Register';
 import Login from './Login';
+import Video from './Video';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -23,6 +25,7 @@ ReactDOM.render(
       <Route exact path ="/slideshow" element={<Slideshow/>}/>
       <Route exact path ="/login" element={<Login/>}/>
       <Route exact path ="/register" element={<Register/>}/>
+      <Route exact path ="/video" element={<Video/>}/>
     </Routes>
   </HashRouter>, 
   document.getElementById('root')

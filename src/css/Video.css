@@ -1,0 +1,55 @@
+#videoSliderContainer {
+    position: relative;
+    width: 800px;
+    height: 650px;
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 5px 5px 5px 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+#videoFrame {
+    position: relative;
+    width: 768px;
+    height: 486px;
+    top: 16px;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    border-color: black;
+    border-width: 2px;
+}
+
+#videoSliderControls {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: darkgray;
+    top: 50px;
+    gap: 50px;
+}
+
+#videoSliderDataText {
+    top: 30px;
+    position: relative;
+}
+
+.videoButton {
+    position: relative;
+    background-color: darkgray;
+    width: 100px;
+    height: 32px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.buttonText {
+    position: relative;
+    color: antiquewhite;
+    margin: auto;
+    top: 5px;
+}
