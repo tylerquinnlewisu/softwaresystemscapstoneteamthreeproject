@@ -1,7 +1,7 @@
 import React from 'react'
 import Menu from './Menu';
 import ImageSlider from './ImageSlider';
-import './Menu.css';
+import './css/Menu.css';
 
 export default function Slideshow () {
     return (

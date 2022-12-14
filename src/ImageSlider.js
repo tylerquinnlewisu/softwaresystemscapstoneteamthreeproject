@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ImageSlider.css"
+import "./css/ImageSlider.css"
 import { SliderData } from './SliderData';
 import { useState } from "react";
 

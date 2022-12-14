@@ -1,0 +1,20 @@
+#aboutBody {
+    position: relative;
+    background-color: lightgray;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+#authorIntroHead {
+    font-size: 50px;
+    padding-top: 100px;;
+}
+
+#authorPara {
+    font-family: "Brush Script MT";
+    font-weight: 500;
+    font-size: xx-large;
+}

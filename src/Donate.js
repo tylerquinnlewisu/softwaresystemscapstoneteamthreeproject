@@ -1,5 +1,5 @@
 import React from 'react'
-import './Donate.css'
+import './css/Donate.css'
 import Menu from './Menu';
 
 export default function Donate () {

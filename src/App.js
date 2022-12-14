@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import { Link } from "react-router-dom"; // Might need this, I'm not sure yet ~ Kyle
-import './App.css';
+import './css/App.css';
 import Menu from './Menu';
 
 //
